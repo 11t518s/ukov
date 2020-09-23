@@ -1,0 +1,296 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">);
+
+body{
+    all: unset;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+li {
+    all:unset;
+}
+
+hr {
+    color: #f7f7f7;
+    margin: 0;
+}
+
+.lpadding{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.lpadding h1{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.lpadding h2{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+
+
+#navchange{
+    z-index: 10;
+    background-color: #2d3437;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+#navchange a{
+    color: white;
+}
+
+#navchange a:hover{
+    color: #64B8F6;
+}
+
+
+
+
+
+
+.initial{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2d3437;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.initial h1{
+    color: #64B8F6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.initial h2{
+    color: white;
+    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+.vision-box{
+    background-color: #f7f7f7;
+    color: #2d3437;
+    text-align : center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+.about-box{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+    text-align: left;
+    align-items: center;
+}
+.about-box ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.about-box li{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-card p{
+ font-size: 10px;
+}
+
+
+
+
+
+
+
+
+.mission ul{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mission li{
+    text-align: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: 0px;
+    color: white;  
+    margin: 10px;
+}
+
+.mission li:nth-child(1){
+    background-image: url(images/first.jpg);
+    background-size: 100%;
+}
+
+
+
+.mission li:nth-child(1) span{
+    z-index: 2;
+    opacity: 1;
+}
+
+.mission li:nth-child(1) div:hover{
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+}
+
+
+.mission li:nth-child(1) span{
+    display: block;
+}
+
+
+
+
+
+
+
+
+.mission li:nth-child(2){
+    background-image: url(images/second.jpg);
+    background-size: 100%;
+}
+
+.mission li:nth-child(3){
+    background-image: url(images/third.jpg);
+    background-size: 150%;
+}
+
+
+
+.mission li h1{
+    padding-top: 30px;
+    font-size: 20px;
+    margin: 0px;
+}
+.mission li p{
+    font-size: 15px;
+}
+.mission li h2{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+.partners ul{
+    align-items: center;
+    padding: 30px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.partners ul li{
+    max-width: 150px;
+    justify-items: ;
+}
+
+.partners li img{
+    max-width: 120px;
+
+}
+
+
+
+
+
+
+
+.contact {
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.contact a img{
+    width: 40px;
+}
+
+
+.programcard{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+
+.slidecardsizing {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+
+
+
+
+
+
+.recruitinfo ul{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recruitinfo ul li{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.recruitinfo ul li h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recruitinfo ul li span:nth-child(1){
+    width: 15%;
+    color: #64B8F6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recruitinfo ul li span:nth-child(2){
+    width:  75%;
+}
