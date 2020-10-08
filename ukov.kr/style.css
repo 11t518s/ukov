@@ -1,12 +1,18 @@
 @import url(<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">);
 
+
+
 body{
     all: unset;
-    background-color: white;
+    background-color: #2d3437;
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-size: 20px;
+    font-family: 'Roboto' sans-serif;
 }
+
+
 li {
     all:unset;
 }
@@ -22,34 +28,66 @@ hr {
 }
 
 .lpadding h1{
-    font-size: 30px;
+    font-size: 3rem;
     padding-top: 30px;
     padding-bottom: 5px;
 }
 
 .lpadding h2{
-    font-size: 15px;
+    font-size: 2rem;
     padding-bottom: 20px;
 }
 
 
 
-#navchange{
-    z-index: 10;
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2d3437;
+    color: white;
+    padding: 0.5em 3em;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
+    width: 100%;
+    z-index: 10;
 }
 
-#navchange a{
+.navBar a{
+    font-size: 1.7em;
+    color: #64b8f6;
+}
+
+.navBarMenu{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    list-style: none;
+}
+
+.navBarMenu li a{
+    font-size: 1rem;
+    padding: 0.5em 1em;
     color: white;
+    vertical-align: middle;
 }
 
-#navchange a:hover{
+.navBar a:hover{
     color: #64B8F6;
+    text-decoration: none;
+}
+
+.navBarToggleBtn{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 0.2em;
+}
+
+.navBarToggleBtn img{
+    width: 1em;
 }
 
 
@@ -59,26 +97,24 @@ hr {
 
 .initial{
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 25em;
+    padding-bottom: 25em;
     background-color: #2d3437;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-
 }
 
 .initial h1{
     color: #64B8F6;
-    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+    padding-bottom: 0.5em;
 }
 
 .initial h2{
     color: white;
-    padding-bottom: 100px;
-    font-family: 'Roboto', sans-serif;
+    padding-bottom: 4em;
 }
+
 
 
 
@@ -91,6 +127,10 @@ hr {
     text-align : center;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.vision-box p {
+    font-size: 1.5em;
 }
 
 
@@ -122,87 +162,104 @@ hr {
     padding-right: 20px;
 }
 .about-card p{
- font-size: 10px;
+ font-size: 2em;
 }
 
 
 
 
-
-
-
-
-.mission ul{
-    padding-top: 30px;
-    padding-bottom: 100px;
-    display: flex;
+.mission{
+    display:flex;
+    justify-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.mission li{
+img{min-height: 100%; max-width: 100%; }
+
+.imgHoverEvent{
+    width: 15em; 
+    height: 15em; 
+    position: relative; 
+    overflow: hidden; 
+    margin: 1%;
+}
+
+.imgHoverEvent .imgBox{
+    width: 15em; 
+    height: 15em; 
     text-align: center;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    margin: 0px;
-    color: white;  
-    margin: 10px;
 }
 
-.mission li:nth-child(1){
-    background-image: url(images/first.jpg);
-    background-size: 100%;
+.imgHoverEvent .hoverBox{
+    top: 0; 
+    left: 0; 
+    width: 15em; 
+    height: 15em; 
+    text-align: center;
 }
 
+.hoverBox p.p1{
+    text-align: center; 
+    font-size: 1.5em; 
+    top: 0px;
+    bottom: 0px;
+}
+
+.hoverBox p.p2{
+    margin-top: 10%; 
+    font-size: 0.75em;
+} 
 
 
-.mission li:nth-child(1) span{
-    z-index: 2;
+.hoverBox span h1{
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hoverBox span{
+    color: white; 
+    border: 4px solid #ccc; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: 2em; 
+    width: 80%; 
+    left: 10%;
+    transition: 0.5s;
+}
+
+.hoverBox span p{
+    opacity: 0;
+}
+
+.imgHoverEvent:hover .hoverBox span{
+    animation: eventAni 0.8s linear 1; 
+    height: 80%; 
+    background: gray;
+}
+
+.imgHoverEvent:hover .hoverBox span p{
+    animation: eventAni2 0.8s linear 1; 
     opacity: 1;
 }
 
-.mission li:nth-child(1) div:hover{
-    background-color: yellow;
-    padding: 20px;
-    display: none;
+.imgHoverEvent:hover .hoverBox span h1{ opacity: 0; }
+
+@keyframes eventAni{
+    0%{height: 2em;}
+    50%{height: 60%;}
+    100%{height: 80%;;}
+}
+@keyframes eventAni2{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
-
-.mission li:nth-child(1) span{
-    display: block;
-}
-
-
-
-
-
-
-
-
-.mission li:nth-child(2){
-    background-image: url(images/second.jpg);
-    background-size: 100%;
-}
-
-.mission li:nth-child(3){
-    background-image: url(images/third.jpg);
-    background-size: 150%;
-}
-
-
-
-.mission li h1{
-    padding-top: 30px;
-    font-size: 20px;
-    margin: 0px;
-}
-.mission li p{
-    font-size: 15px;
-}
-.mission li h2{
-    margin: 0px;
-}
 
 
 
@@ -268,7 +325,7 @@ hr {
 
 
 .recruitinfo ul{
-    padding-top: 20px;
+    padding: 40px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -276,21 +333,101 @@ hr {
 .recruitinfo ul li{
     padding-top: 50px;
     padding-bottom: 30px;
+
     display: flex;
 }
 
 .recruitinfo ul li h3{
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .recruitinfo ul li span:nth-child(1){
     width: 15%;
     color: #64B8F6;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .recruitinfo ul li span:nth-child(2){
     width:  75%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .navBar {
+        min-width: 200px;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBarMenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navBarMenu li{
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .navBarToggleBtn{
+        width: 1em;
+        display: block;
+    }
+
+    .navBarMenu.active {
+        display: flex;
+    }
+
+    .initial {
+        padding-top: 15em;
+        padding-bottom: 15em;
+    }
+
+    .vision-box p {
+        font-size: 1em;
+    }
+
+
+
+    #internship h5 {
+        font-size: 3%;
+    }
+
+    #internship p {
+        font-size: 2%;
+    }
+
+    .lpadding h1{
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .lpadding h2{
+        font-size: 1.1rem;
+        padding-bottom: 20px;
+    }
+
+
+
+    .recruitinfo ul li{
+        display: inline-block;
+    }
+
+    .recruitinfo ul li h3 {
+        padding-top: 0.5em;
+    }
+
+    .recruitinfo ul li p {
+        padding-top: 0.5em;
+    }
+    
+
 }

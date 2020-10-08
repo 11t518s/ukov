@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>UKOV</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -14,28 +15,21 @@
 
 
 <body>
-
-    <div id="navchange" class="lpadding">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">UKOV</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="program.html">Program</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="recruit.html">Recruit</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
+    <div class="navBar lpadding">
+        <div class="navBarMain">
+            <a href="index.html">UKOV</a>
+        </div>
+        <div class="navBarMenu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="program.html">program</a></li>
+            <li><a href="recruit.html">recruit</a></li>
+        </div>
+        <a href="#" class="navBarToggleBtn">
+            <img src="images/hamburger.png">
+        </a>
     </div>
+
+
 
     <div class="initial">
         <h1>UKOV</h1>
@@ -44,13 +38,15 @@
             <img src="images/SoftBank VA_logo_WH.webp">
         </a>
     </div>
-    <div class="vision-box">
+    <div class="vision-box lpadding">
         <h1>BEGIN YOUR JOURNEY TO START-UP</h1>
         <h2>-</h2>
         <p>
             UKOV는 Undergrautated Knight of Ventures의 약자로 <br>
-            소프트뱅크 벤처스의 후원 아래 엄선된 스타트업의 일을 돕고 함께 성장해 나가는 대외활동입니다.<br>
-            저희는 주체적으로 배우고 변화에 도전하면서 스타트업 생태계를 위한 인재를 배출해내고 있습니다.
+            소프트뱅크 벤처스의 후원 아래 엄선된 스타트업의 일을 돕고<br>
+            함께 성장해 나가는 대외활동입니다.<br>
+            저희는 주체적으로 배우고 변화에 도전하면서<br>
+            스타트업 생태계를 위한 인재를 배출해내고 있습니다.
         </p>
     </div>
     <div class="about-box">
@@ -74,47 +70,53 @@
         </div>
     </div>
     <hr>
+
+
+    <div class="lpadding">
+        <h1>What we do</h1>
+        <h2>UKOV 활동 프로그램</h2>
+    </div>
     <div class="mission">
-        <div class="lpadding">
-            <h1>What we do</h1>
-            <h2>UKOV 활동 프로그램</h2>
-        </div>
-        <div class="mission-inbox">
-            <ul>
-                <li><span>INTERNSHIP</span>
+        <div class="imgHoverEvent">
+            <div class="imgBox"><img src="images/first.jpg"> </div>
+                <div class="hoverBox">
                     <span>
-                        <h1>INTERNSHIP</h1>
-                        <h2>-</h2>
-                        <p>소프트뱅크 벤처스가 투자한<br>
+                        <h1>internship</h1>
+                        <p class="p1">internship</p>
+                        <p class="p2">소프트뱅크 벤처스가 투자한<br>
                             엄선된 스타트업에서<br>
                             다양한 분야로 나누어져<br>
-                            인턴을 수행합니다.
-                         </p>
+                            인턴을 수행합니다.</p>
                     </span>
-                </li>
-                <li><span>MINI START UP</span>
+                </div>
+        </div>
+
+        <div class="imgHoverEvent">
+            <div class="imgBox"><img src="images/second.jpg"> </div>
+                <div class="hoverBox">
                     <span>
                         <h1>MINI START UP</h1>
-                        <h2>-</h2>
-                        <p>단원들이 팀을 이뤄<br>
+                        <p class="p1">MINI START UP</p>
+                        <p class="p2">단원들이 팀을 이뤄<br>
                             프로젝트를 기획 후<br>
                             소프트뱅크벤처스 심사역들에게<br>
-                            피칭할 기회를 얻습니다.
-                         </p>
+                            피칭할 기회를 얻습니다.</p>
                     </span>
-                </li>
-                <li><span>NETWORKING</span>
+                </div>
+        </div>
+
+        <div class="imgHoverEvent">
+            <div class="imgBox"><img src="images/third.jpg"> </div>
+                <div class="hoverBox">
                     <span>
                         <h1>NETWORKING</h1>
-                        <h2>-</h2>
-                        <p>홈 커밍 데이, 스타트업 강연 등<br>
+                        <p class="p1">NETWORKING</p>
+                        <p class="p2">홈 커밍 데이, 스타트업 강연 등<br>
                             졸업자 뿐만 아니라 현직자분들과<br>
                             만남을 통해서 더 나아가는<br>
-                            스타트업 생태계를 만듭니다.
-                         </p>
+                            스타트업 생태계를 만듭니다.</p>
                     </span>
-                </li>
-            </ul>
+                </div>
         </div>
     </div>
     <hr>
